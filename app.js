@@ -58,12 +58,4 @@
       })
     );
   }
-
-  // Case study filter chips (visual only — single case study, informs UI intent)
-  document.querySelectorAll('.chip[data-filter]').forEach((chip) => {
-    chip.addEventListener('click', () => {
-      document.querySelectorAll('.chip[data-filter]').forEach((c) => c.setAttribute('aria-pressed', 'false'));
-      chip.setAttribute('aria-pressed', 'true');
-    });
-  });
 })();
