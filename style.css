@@ -45,62 +45,77 @@
   --font-body: 'Inter', -apple-system, 'Helvetica Neue', sans-serif;
 }
 
-/* ============ COLOR SYSTEM — GRN Shoreline brand ============ */
+/* ============ COLOR SYSTEM — GRN Shoreline brand ============
+   Brand palette (from GRN Shoreline print + LinkedIn assets):
+   Navy #13263B · Deep teal #2F7A74 · Sage ramp #7FB0AA / #A8CBC7 / #D2E4E1 / #EEF4F3
+   Slate text #394756 / #485563 / #626D79 · Mist panel #EEF2F4 */
 :root,
 [data-theme='light'] {
-  --color-navy: #0c1b3b;
-  --color-navy-2: #132549;
-  --color-teal: #0f766e;
-  --color-teal-2: #20a56a;
-  --color-mint: #d5ffed;
+  --color-navy: #13263b;
+  --color-navy-2: #1c3550;
+  --color-teal: #2f7a74;
+  --color-teal-2: #2f7a74;
+  --color-mint: #d2e4e1;
+
+  --color-sage-100: #eef4f3;
+  --color-sage-200: #d2e4e1;
+  --color-sage-300: #a8cbc7;
+  --color-sage-400: #7fb0aa;
+  --color-sage-500: #2f7a74;
+  --color-slate: #65727f;
+  --color-btn: #2f7a74;
+  --color-btn-hover: #26655f;
 
   --color-bg: #ffffff;
-  --color-surface: #f8f8f8;
+  --color-surface: #f5f7f8;
   --color-surface-2: #ffffff;
-  --color-surface-offset: #eef6f2;
-  --color-surface-mint: #d5ffed;
-  --color-divider: #e5e7eb;
-  --color-border: #e5e7eb;
+  --color-surface-offset: #eef4f3;
+  --color-surface-mint: #d2e4e1;
+  --color-divider: #e3e8ec;
+  --color-border: #d5dce2;
 
-  --color-text: #0c1b3b;
-  --color-text-muted: #474747;
-  --color-text-faint: #9ca3af;
-  --color-text-inverse: #f8f8f8;
+  --color-text: #13263b;
+  --color-text-muted: #485563;
+  --color-text-faint: #7a838d;
+  --color-text-inverse: #f5f7f8;
 
-  --color-primary: #0f766e;
-  --color-primary-hover: #0c5c56;
-  --color-primary-active: #094843;
-  --color-primary-highlight: #d5ffed;
+  --color-primary: #2f7a74;
+  --color-primary-hover: #26655f;
+  --color-primary-active: #1f524d;
+  --color-primary-highlight: #d2e4e1;
 
-  --color-accent: #20a56a;
-  --color-accent-hover: #188753;
+  --color-accent: #2f7a74;
+  --color-accent-hover: #26655f;
 
-  --shadow-sm: 0 1px 2px rgba(12, 27, 59, 0.06);
-  --shadow-md: 0 6px 16px rgba(12, 27, 59, 0.09);
-  --shadow-lg: 0 16px 40px rgba(12, 27, 59, 0.14);
+  --shadow-sm: 0 1px 2px rgba(19, 38, 59, 0.06);
+  --shadow-md: 0 6px 16px rgba(19, 38, 59, 0.09);
+  --shadow-lg: 0 16px 40px rgba(19, 38, 59, 0.14);
 }
 
 [data-theme='dark'] {
-  --color-bg: #0a1530;
-  --color-surface: #0c1b3b;
-  --color-surface-2: #101f42;
-  --color-surface-offset: #122645;
-  --color-surface-mint: #163527;
-  --color-divider: #223258;
-  --color-border: #2a3b64;
+  --color-bg: #0e1d2e;
+  --color-surface: #13263b;
+  --color-surface-2: #172c44;
+  --color-surface-offset: #1a3149;
+  --color-surface-mint: #1e3d44;
+  --color-divider: #243a52;
+  --color-border: #2e4560;
 
-  --color-text: #eef2f7;
-  --color-text-muted: #b7c0d6;
-  --color-text-faint: #7f8bab;
-  --color-text-inverse: #0c1b3b;
+  --color-text: #eef4f3;
+  --color-text-muted: #b4c0cb;
+  --color-text-faint: #7f8e9c;
+  --color-text-inverse: #13263b;
 
-  --color-primary: #2bbfa0;
-  --color-primary-hover: #4fd2b5;
-  --color-primary-active: #20a56a;
-  --color-primary-highlight: #163527;
+  --color-teal: #7fb0aa;
+  --color-teal-2: #7fb0aa;
 
-  --color-accent: #33c17a;
-  --color-accent-hover: #57d295;
+  --color-primary: #7fb0aa;
+  --color-primary-hover: #a8cbc7;
+  --color-primary-active: #5f9a93;
+  --color-primary-highlight: #1e3d44;
+
+  --color-accent: #a8cbc7;
+  --color-accent-hover: #d2e4e1;
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.35);
@@ -109,23 +124,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --color-bg: #0a1530;
-    --color-surface: #0c1b3b;
-    --color-surface-2: #101f42;
-    --color-surface-offset: #122645;
-    --color-surface-mint: #163527;
-    --color-divider: #223258;
-    --color-border: #2a3b64;
-    --color-text: #eef2f7;
-    --color-text-muted: #b7c0d6;
-    --color-text-faint: #7f8bab;
-    --color-text-inverse: #0c1b3b;
-    --color-primary: #2bbfa0;
-    --color-primary-hover: #4fd2b5;
-    --color-primary-active: #20a56a;
-    --color-primary-highlight: #163527;
-    --color-accent: #33c17a;
-    --color-accent-hover: #57d295;
+    --color-bg: #0e1d2e;
+    --color-surface: #13263b;
+    --color-surface-2: #172c44;
+    --color-surface-offset: #1a3149;
+    --color-surface-mint: #1e3d44;
+    --color-divider: #243a52;
+    --color-border: #2e4560;
+    --color-text: #eef4f3;
+    --color-text-muted: #b4c0cb;
+    --color-text-faint: #7f8e9c;
+    --color-text-inverse: #13263b;
+    --color-teal: #7fb0aa;
+  --color-teal-2: #7fb0aa;
+    --color-primary: #7fb0aa;
+    --color-primary-hover: #a8cbc7;
+    --color-primary-active: #5f9a93;
+    --color-primary-highlight: #1e3d44;
+    --color-accent: #a8cbc7;
+    --color-accent-hover: #d2e4e1;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.35);
     --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
@@ -336,12 +353,12 @@ main {
   line-height: 1.2;
 }
 .btn--primary {
-  background: var(--color-teal);
+  background: var(--color-btn);
   color: #fff;
   box-shadow: var(--shadow-sm);
 }
 .btn--primary:hover {
-  background: var(--color-primary-hover);
+  background: var(--color-btn-hover);
   box-shadow: var(--shadow-md);
   transform: translateY(-1px);
 }
@@ -442,9 +459,9 @@ main {
   inset: 0;
   background: linear-gradient(
     115deg,
-    rgba(12, 27, 59, 0.94) 0%,
-    rgba(12, 27, 59, 0.82) 42%,
-    rgba(15, 118, 110, 0.55) 100%
+    rgba(19, 38, 59, 0.94) 0%,
+    rgba(19, 38, 59, 0.84) 42%,
+    rgba(47, 122, 116, 0.55) 100%
   );
   z-index: 1;
 }
@@ -464,6 +481,24 @@ main {
   max-width: 62ch;
   margin-bottom: var(--space-8);
   font-family: var(--font-body);
+}
+/* Brand signature: six-step sage ramp (matches LinkedIn banner) */
+.hero h1::after,
+.page-hero h1::after {
+  content: '';
+  display: block;
+  width: min(100%, 380px);
+  height: 5px;
+  margin-top: var(--space-6);
+  background: linear-gradient(
+    90deg,
+    #ffffff 0 15.5%, transparent 15.5% 16.9%,
+    #d2e4e1 16.9% 32.4%, transparent 32.4% 33.8%,
+    #a8cbc7 33.8% 49.3%, transparent 49.3% 50.7%,
+    #7fb0aa 50.7% 66.2%, transparent 66.2% 67.6%,
+    #2f7a74 67.6% 83.1%, transparent 83.1% 84.5%,
+    #65727f 84.5% 100%
+  );
 }
 .hero-ctas {
   display: flex;
@@ -736,8 +771,8 @@ h3.card-title,
   flex-direction: column;
   align-items: center;
   gap: var(--space-6);
-  background-image: radial-gradient(circle at 15% 20%, rgba(32, 165, 106, 0.28), transparent 45%),
-    radial-gradient(circle at 85% 80%, rgba(15, 118, 110, 0.28), transparent 45%);
+  background-image: radial-gradient(circle at 15% 20%, rgba(127, 176, 170, 0.18), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(47, 122, 116, 0.3), transparent 45%);
 }
 .cta-band h2 {
   font-size: var(--text-2xl);
@@ -780,6 +815,14 @@ h3.card-title,
   font-size: var(--text-lg);
   color: var(--color-navy);
   margin-bottom: var(--space-2);
+}
+[data-theme='dark'] .newsletter-copy h3 {
+  color: var(--color-text);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .newsletter-copy h3 {
+    color: var(--color-text);
+  }
 }
 .newsletter-copy p {
   color: var(--color-text-muted);
