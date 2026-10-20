@@ -832,9 +832,9 @@ h3.card-title,
 /* ============ TEAM ============ */
 .team-strip {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-10);
-  max-width: 820px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+  max-width: 1040px;
   margin-inline: auto;
 }
 .team-card {
@@ -1038,14 +1038,14 @@ h3.card-title,
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-8);
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
 }
 .team-grid .team-card {
   background: var(--color-surface-2);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: var(--space-8);
+  padding: var(--space-6);
 }
 .team-grid .team-photo {
   width: 120px;
@@ -1356,12 +1356,14 @@ h3.card-title,
     grid-template-columns: repeat(2, 1fr);
   }
   .team-strip {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-6);
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-5);
   }
   .team-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-5);
+    max-width: 720px;
+    margin-inline: auto;
   }
   .team-grid .team-card {
     padding: var(--space-6);
@@ -1435,8 +1437,9 @@ h3.card-title,
     grid-template-columns: 1fr;
   }
   .team-strip {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-4);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+    max-width: 480px;
   }
   .team-grid {
     max-width: 420px;
@@ -1465,7 +1468,7 @@ h3.card-title,
 
 @media (max-width: 480px) {
   .team-strip {
-    grid-template-columns: 1fr;
-    max-width: 200px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
   }
 }
